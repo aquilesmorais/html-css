@@ -1,0 +1,31 @@
+<!DOCTYPE html>     
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark{background-color: violet;}
+    </style>
+    <title>midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>tente abrir este site em varios dispositivos diferentes ou simplismente aumenta e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:  1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagens flexivel">
+    </picture>
+    <h1>Reprodução Àudio</h1>
+    <p>Vamos aprender a reproduzir <mark>áudios</mark> em HTML5</p>
+    <p><mark>Música da boa kkkk</mark></p>
+    <audio preload="auto" autoplay controls loop> 
+        <source src="audios/Till I Let Go - NEFFEX.mp3" type="audio/mpg">
+        <source src="audios/Till I Let Go - NEFFEX.mp3" type="audio/ogg">
+        <source src="audios/Till I Let Go - NEFFEX.mp3" type="audio/wav">
+       <p><mark>infelizmente seu navegador não consegue reproduzir audio.</mark></p>
+        <a href="audios/Till I Let Go - NEFFEX.mp3">clique aqui para baixar pra arquivo MP3.</a>
+    </audio>
+</body>
+</html>
